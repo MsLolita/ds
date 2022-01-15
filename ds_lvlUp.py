@@ -104,28 +104,15 @@ def del_first_line_file(file):
         f.writelines(lines[1:])
 
 if __name__ == '__main__':
-  worker_file = input("worker file=") or "worker.txt"
+  worker_file = "worker.txt"
   main_file = "msgs.txt"
-
-  if not pathlib.Path(worker_file).exists():
-    create_worker_file(worker_file, main_file)
-    shuffle_file(worker_file)
-  elif os.stat(worker_file).st_size == 0:
-    print("WORKER FILE IS EMPTY!!!!!!")
-    exit()
   
   messages = make_list_from_file(worker_file)
   
-  token = input("ds token=")  
-  main = DiscordLevelUp(token or "NDk1MzA0ODYzNTc2NzUyMTM0.YViPTg.jWHVmxkeNMe8sz9fPo6lrghsdPU", messages, worker_file)
+  main = DiscordLevelUp("NDk1MzA0ODYzNTc2NzUyMTM0.YViPTg.jWHVmxkeNMe8sz9fPo6lrghsdPU", messages, worker_file)
 
-  while True:
-    server = input("server id=")
-    if not server:
-      break
-    timeout = input("timeout=")
-    main.add_server(server, timeout or 62) # 906976942903943220
-  
+  main.add_server("930102591923294228", 122)
+  main.add_server("931600696594284654", 122)
   #main.add_server("929427655462379620", 62)
   #main.add_server("928072746083188847", 54)  # chine 928072746083188847
   # main.add_server("928072819881955359", 34)  # japan 928072819881955359
