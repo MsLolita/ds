@@ -109,7 +109,7 @@ if __name__ == '__main__':
   
   messages = make_list_from_file(worker_file)
   
-  main = DiscordLevelUp("NDk1MzA0ODYzNTc2NzUyMTM0.YeH8QA.JOqFvloovs_JZcTS6mCAwkwFNVE", messages, worker_file)
+  main = DiscordLevelUp("NDk1MzA0ODYzNTc2NzUyMTM0.YeLk0Q.CzshG7cJY7YzqdMYzgOPfRYh3vw", messages, worker_file)
 
   main.add_server("930102591923294228", 122)
   main.add_server("931600696594284654", 122)
