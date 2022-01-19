@@ -25,6 +25,7 @@ class DiscordLevelUp:
       'cookie': '__dcfduid=454ad2202cef11ecb7fb0f6855950b5f; __sdcfduid=454ad2212cef11ecb7fb0f6855950b5f5c13bef09dbe77748f5c5d699ef4f1c36d5f5b185c083cc66907e7ced819e2d1; _gcl_au=1.1.1222970002.1634216679; _ga=GA1.2.854608900.1634216679; _gid=GA1.2.1155898491.1634216679; locale=ru; OptanonConsent=isIABGlobal=false&datestamp=Wed+Jan+19+2022+18:53:54+GMT+0300+(Москва,+стандартное+время)&version=6.17.0&hosts=&landingPath=https://discord.com/&groups=C0001:1,C0002:1,C0003:1'.encode('utf-8'),
       'x-super-properties': 'eyJvcyI6IldpbmRvd3MiLCJicm93c2VyIjoiQ2hyb21lIiwiZGV2aWNlIjoiIiwic3lzdGVtX2xvY2FsZSI6InJ1LVJVIiwiYnJvd3Nlcl91c2VyX2FnZW50IjoiTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4zOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzkwLjAuNDQzMC44NSBTYWZhcmkvNTM3LjM2IiwiYnJvd3Nlcl92ZXJzaW9uIjoiOTAuMC40NDMwLjg1Iiwib3NfdmVyc2lvbiI6IjguMSIsInJlZmVycmVyIjoiaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8iLCJyZWZlcnJpbmdfZG9tYWluIjoid3d3Lmdvb2dsZS5jb20iLCJzZWFyY2hfZW5naW5lIjoiZ29vZ2xlIiwicmVmZXJyZXJfY3VycmVudCI6IiIsInJlZmVycmluZ19kb21haW5fY3VycmVudCI6IiIsInJlbGVhc2VfY2hhbm5lbCI6InN0YWJsZSIsImNsaWVudF9idWlsZF9udW1iZXIiOjExMTE0MCwiY2xpZW50X2V2ZW50X3NvdXJjZSI6bnVsbH0='
     }
+    
     self.messages = messages
     self.worker_file = worker_file
     self.proxies = {
