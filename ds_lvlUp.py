@@ -110,7 +110,9 @@ if __name__ == '__main__':
   main_file = "msgs.txt"
   
   messages = make_list_from_file(worker_file)
-  
+  a = requests.get("http://httpbin.org/ip", proxies={"https" : "http://oHXOMY:uIJ0LLa6Ai@46.8.23.244:5500"})
+  print(a.text)
+  exit()
   main = DiscordLevelUp("ODk4MTk0NjEwODg5ODM0NTE4.YWgrFw.uHXioGWUDpA9rh-xxC-20_oen78", messages, worker_file)
 
   main.add_server("929436445159096391", 303)
