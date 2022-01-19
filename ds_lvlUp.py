@@ -21,7 +21,9 @@ class DiscordLevelUp:
       'origin': 'https://discord.com',
       'sec-fetch-site': 'same-origin',
       'sec-fetch-mode': 'cors',
-      'sec-fetch-dest': 'empty'
+      'sec-fetch-dest': 'empty',
+      'cookie': '__dcfduid=454ad2202cef11ecb7fb0f6855950b5f; __sdcfduid=454ad2212cef11ecb7fb0f6855950b5f5c13bef09dbe77748f5c5d699ef4f1c36d5f5b185c083cc66907e7ced819e2d1; _gcl_au=1.1.1222970002.1634216679; _ga=GA1.2.854608900.1634216679; _gid=GA1.2.1155898491.1634216679; locale=ru; OptanonConsent=isIABGlobal=false&datestamp=Wed+Jan+19+2022+18%3A53%3A54+GMT%2B0300+(%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C+%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D0%BE%D0%B5+%D0%B2%D1%80%D0%B5%D0%BC%D1%8F)&version=6.17.0&hosts=&landingPath=https%3A%2F%2Fdiscord.com%2F&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1'.encode('utf-8'),
+      'x-super-properties': 'eyJvcyI6IldpbmRvd3MiLCJicm93c2VyIjoiQ2hyb21lIiwiZGV2aWNlIjoiIiwic3lzdGVtX2xvY2FsZSI6InJ1LVJVIiwiYnJvd3Nlcl91c2VyX2FnZW50IjoiTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4zOyBXT1c2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzkwLjAuNDQzMC44NSBTYWZhcmkvNTM3LjM2IiwiYnJvd3Nlcl92ZXJzaW9uIjoiOTAuMC40NDMwLjg1Iiwib3NfdmVyc2lvbiI6IjguMSIsInJlZmVycmVyIjoiaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8iLCJyZWZlcnJpbmdfZG9tYWluIjoid3d3Lmdvb2dsZS5jb20iLCJzZWFyY2hfZW5naW5lIjoiZ29vZ2xlIiwicmVmZXJyZXJfY3VycmVudCI6IiIsInJlZmVycmluZ19kb21haW5fY3VycmVudCI6IiIsInJlbGVhc2VfY2hhbm5lbCI6InN0YWJsZSIsImNsaWVudF9idWlsZF9udW1iZXIiOjExMTE0MCwiY2xpZW50X2V2ZW50X3NvdXJjZSI6bnVsbH0='
     }
     self.messages = messages
     self.worker_file = worker_file
@@ -109,7 +111,7 @@ if __name__ == '__main__':
   
   messages = make_list_from_file(worker_file)
   
-  main = DiscordLevelUp("ODk4MTk2ODQ2NzkzNjEzMzUz.YeSD-Q.KNiOUUUSx4MwMk1h34syctrEdKs", messages, worker_file)
+  main = DiscordLevelUp("ODk4MTk0NjEwODg5ODM0NTE4.YWgrFw.uHXioGWUDpA9rh-xxC-20_oen78", messages, worker_file)
 
   main.add_server("929436445159096391", 303)
   main.add_server("929436444475392047", 62)
